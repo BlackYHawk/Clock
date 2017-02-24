@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">Clock</string>
+    <!-- 公共-->
+    <string name="delete">删除</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="never">不再提醒</string>
+    <string name="complete">完成</string>
+    <string name="share">分享</string>
+    <string name="add">添加</string>
+    <string name="modify">修改</string>
+    <string name="password">密码</string>
+    <string name="submit">提交</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="next">下一步</string>
+    <string name="skip">跳过</string>
+
+    <!-- 主页-->
+    <string name="home_title">Love</string>
+
+    <!-- 闹钟-->
+    <string name="alarm_add_title">添加闹钟</string>
+    <string name="alarm_ring">铃声</string>
+    <string name="alarm_ring_default">默认铃声</string>
+    <string name="alarm_vibrate">响铃时振动</string>
+
+</resources>

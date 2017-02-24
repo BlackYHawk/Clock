@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 侧滑面板 -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="@dimen/sidbar_layout_t" >
+
+    <RelativeLayout
+        android:id="@+id/layHead"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sidbar_layout_head_h"
+        android:paddingLeft="@dimen/sidbar_head_padding_l"
+        android:gravity="center_vertical">
+
+        <io.hawk.clock.widget.CircleImageView
+            android:id="@+id/cvHead"
+            android:layout_width="@dimen/sidbar_head"
+            android:layout_height="@dimen/sidbar_head"
+            android:src="@mipmap/default_portrait"
+            app:border_color="@color/white"
+            app:border_width="1dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/cvHead"
+            android:layout_alignTop="@id/cvHead"
+            android:layout_alignBottom="@id/cvHead"
+            android:layout_marginLeft="@dimen/sidbar_head_text_margin"  >
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/sidbar_head_text_top"
+                android:textAppearance="@style/Text_Black_16"  />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvUsername"
+                android:textAppearance="@style/Text_Gray_14"  />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_line" />
+
+</RelativeLayout>

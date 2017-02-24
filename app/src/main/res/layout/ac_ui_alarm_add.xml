@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/layRing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alarm_ring_h"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alarm_ring_margin_l"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/alarm_ring_padding"
+                android:text="@string/alarm_ring"
+                android:textAppearance="@style/Text_Black_16"/>
+
+            <TextView
+                android:id="@+id/tvRing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/alarm_ring_padding"
+                android:text="@string/alarm_ring_default"
+                android:textAppearance="@style/Text_Gray_14"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@mipmap/ic_arrow_right"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_line" />
+
+    <RelativeLayout
+        android:id="@+id/layVibrate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alarm_ring_h"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alarm_ring_margin_l"
+            android:padding="@dimen/alarm_ring_padding"
+            android:text="@string/alarm_vibrate"
+            android:textAppearance="@style/Text_Black_16"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/scVibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/alarm_ring_margin_r"
+            android:checked="false"/>
+
+    </RelativeLayout>
+
+    <io.hawk.clock.widget.TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </io.hawk.clock.widget.TimePicker>
+
+
+</LinearLayout>

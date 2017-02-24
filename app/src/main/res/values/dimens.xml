@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--公共-->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="toolbar_padding">0dp</dimen>
+    <dimen name="toolbar_size">18sp</dimen>
+    <integer name="anim_duration_short">300</integer>
+
+    <!--    侧边栏-->
+    <dimen name="shadow_width">20dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="sidbar_layout_t">20dp</dimen>
+    <dimen name="sidbar_layout_head_h">100dp</dimen>
+    <dimen name="sidbar_head">60dp</dimen>
+    <dimen name="sidbar_head_padding_l">20dp</dimen>
+    <dimen name="sidbar_head_text_margin">10dp</dimen>
+    <dimen name="sidbar_head_text_top">10dp</dimen>
+
+    <!--    铃声-->
+    <dimen name="alarm_ring_h">50dp</dimen>
+    <dimen name="alarm_ring_margin_l">10dp</dimen>
+    <dimen name="alarm_ring_margin_r">5dp</dimen>
+    <dimen name="alarm_ring_padding">2dp</dimen>
+
+</resources>
